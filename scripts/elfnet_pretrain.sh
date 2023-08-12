@@ -5,7 +5,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --epochs 16\
                 --pre_train\
                 --num_workers 1\
                 --dataset sceneflow\
-                --dataset_directory /home/ljm/ssd/sceneflow\
+                --dataset_directory /path_to_sceneflow/\
                 --weight_reg 0.5\
                 --name elfnet_pretrain\
                 --lr_sttr 0.0002\

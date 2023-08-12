@@ -6,7 +6,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py  --epochs 1\
                 --dataset sceneflow\
                 --dataset_directory /path_to_sceneflow/\
                 --name elfnet_test_sceneflow\
-                --resume ./ckpt/model.pth.tar\
+                --resume ./ckpt/elfnet_pretrain.tar\
                 --eval\
                 --validation validation_all
 

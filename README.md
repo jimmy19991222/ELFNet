@@ -74,6 +74,8 @@ MIDDLEBURY
 sh scripts/elfnet_pretrain.sh
 ```
 
+You can download the checkpoint pretrained on Scene Flow Dataset from this [Google Drive link](https://drive.google.com/file/d/16ViZY16-rtTK1oFnMAmlahh3gXfEAVCP/view?usp=share_link). (Note that you don't need to untar the checkpoint.)
+
 ### Evaluation
 
 ```shell

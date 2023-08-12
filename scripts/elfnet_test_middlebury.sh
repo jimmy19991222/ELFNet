@@ -6,7 +6,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py  --epochs 1\
                 --dataset middlebury\
                 --dataset_directory /path_to_middlebury/trainingQ/\
                 --name elfnet_test_middlebury\
-                --resume ./ckpt/model.pth.tar\
+                --resume ./ckpt/elfnet_pretrain.tar\
                 --eval\
                 --validation validation_all
 
