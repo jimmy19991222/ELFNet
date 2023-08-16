@@ -84,6 +84,18 @@ sh scripts/elfnet_test_kitti.sh
 sh scripts/elfnet_test_middlebury.sh
 ```
 
+## Citation
+If you find our work useful or provides some new insights😊, please consider citing our paper using the following BibTeX entry.
+
+```
+@article{lou2023elfnet,
+  title={ELFNet: Evidential Local-global Fusion for Stereo Matching},
+  author={Lou, Jieming and Liu, Weide and Chen, Zhuo and Liu, Fayao and Cheng, Jun},
+  journal={arXiv preprint arXiv:2308.00728},
+  year={2023}
+}
+```
+
 ## Acknowledgements
 
 We thank for the code implementation from [PCWNet](https://github.com/gallenszl/PCWNet), [STTR](https://github.com/mli0603/stereo-transformer) and [Evidential-deep-learning](https://github.com/aamini/evidential-deep-learning).
