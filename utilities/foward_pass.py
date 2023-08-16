@@ -33,12 +33,12 @@ def write_summary(stats, summary, epoch, mode):
         mode + '/3px_error', stats['px_error_rate'], epoch)
 
 
-def forward_pass(model, data, device, criterion, stats, idx=0, logger=None):
+def forward_pass(model, data, device, criterion, stats, idx=0, logger=None, stage='train'):
     """
     forward pass of the model given input
     """
     # read data
-    data = random_crop(360, 640, data, 'train')
+    data = random_crop(360, 640, data, stage)
     left, right = data['left'].to(device), data['right'].to(device)
     disp, occ_mask, occ_mask_right = data['disp'].to(device), data['occ_mask'].to(device), \
         data['occ_mask_right'].to(device)

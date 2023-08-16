@@ -33,7 +33,7 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, data_loader: It
         # if (idx == 10): break
         # forward pass
         outputs, losses, sampled_disp = forward_pass(
-            model, data, device, criterion, eval_stats, idx, logger)
+            model, data, device, criterion, eval_stats, idx, logger, 'eval')
 
         if losses is None:
             valid_samples -= 1
