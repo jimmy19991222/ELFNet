@@ -1,7 +1,7 @@
 import torch
 
 from utilities.misc import NestedTensor
-from torch.cuda.amp import autocast as autocast, GradScaler
+# from torch.cuda.amp import autocast as autocast, GradScaler
 
 from dataset.stereo_albumentation import random_crop
 

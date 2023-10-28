@@ -111,8 +111,8 @@ def random_crop(min_crop_height, min_crop_width, input_data, split):
         y1 = 0
         y2 = height - 1
     else:
-        crop_height = random.randint(min_crop_height, height-96)
-        crop_width = random.randint(min_crop_width, width-128)
+        crop_height = random.randint(min_crop_height, height-160)
+        crop_width = random.randint(min_crop_width, width-208)
         # crop_height = min_crop_height
         # crop_width = min_crop_width
 
