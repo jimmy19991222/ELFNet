@@ -99,7 +99,8 @@ class Criterion(nn.Module):
         # len(u): size
         loss = torch.sum(
             (0.5 * torch.log(np.pi / la) - alpha * torch.log(om) +
-             (alpha + 0.5) * torch.log(la * (u - y) ** 2 + om))[mask]
+             (alpha + 0.5) * torch.log(la * (u - y) ** 2 + om) +
+             torch.lgamma(alpha) - torch.lgamma(alpha+0.5))[mask]
         ) / torch.sum(mask == True)
 
         lossr = self.weight_reg * (torch.sum((torch.abs(u - y) * (2 * la + alpha))
